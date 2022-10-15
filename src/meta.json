@@ -1,0 +1,30 @@
+{
+  "name": "share-app",
+  "plugins": [
+    {
+      "name": "TailwindCSS",
+      "description": "A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.",
+      "url": "https://tailwindcss.com/docs"
+    },
+    {
+      "name": "Styled Components",
+      "description": "Utilising tagged template literals (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components.",
+      "url": "https://styled-components.com/docs"
+    },
+    {
+      "name": "next-i18next",
+      "description": "react-i18next is a powerful internationalization framework for React / React Native which is based on i18next. Check out the history of i18next and when react-i18next was introduced.",
+      "url": "https://react.i18next.com"
+    },
+    {
+      "name": "eslint",
+      "description": "",
+      "url": ""
+    },
+    {
+      "name": "Testing Library",
+      "description": "The React Testing Library is a very light-weight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils.",
+      "url": "https://testing-library.com/docs/"
+    }
+  ]
+}

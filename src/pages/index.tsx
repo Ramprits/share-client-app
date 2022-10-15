@@ -1,16 +1,7 @@
 import React from "react";
 
-import { Container, Header, Main, Footer, Cards } from "components";
-
 const Home: React.FC = () => {
-  return (
-    <Container>
-      <Header />
-      <Main />
-      <Cards />
-      <Footer />
-    </Container>
-  );
+  return <div className="text-lg text-center text-gray-500">Welcome to app</div>;
 };
 
 export default Home;

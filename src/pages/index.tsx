@@ -1,7 +1,8 @@
 import React from "react";
+import { Button } from "@pankod/refine-mantine";
 
 const Home: React.FC = () => {
-  return <div className="text-lg text-center text-gray-500">Welcome to app</div>;
+  return <Button className="font-mono text-gray-400">Click me</Button>;
 };
 
 export default Home;

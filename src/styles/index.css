@@ -6,3 +6,7 @@
   width: 0px;
   background-color: transparent;
 }
+
+* {
+  font-family: "Courier New", Courier, monospace;
+}

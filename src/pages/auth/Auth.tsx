@@ -16,7 +16,6 @@ import {
 
 import { useLogin } from "@pankod/refine-core";
 import { BackgroundImage } from "@pankod/refine-mantine";
-import { TwitterButton } from "@mantine/ds";
 import { GoogleButton } from "./components/SocialButton";
 
 type LoginFormType = {
@@ -27,11 +26,7 @@ type LoginFormType = {
 };
 
 export function AuthPage(props: PaperProps) {
-  const {
-    mutate: loginUserMutation,
-    isLoading,
-    error: loginError,
-  } = useLogin();
+  const { mutate: loginUserMutation, isLoading, error } = useLogin();
 
   const [type, toggle] = useToggle(["login", "register"]);
   const form = useForm({
@@ -56,6 +51,15 @@ export function AuthPage(props: PaperProps) {
       loginUserMutation(value);
     }
   }
+
+  const renderErrorMessage = (err: Error) => {
+    return (
+      <Group mt={5}>
+        <Text color="red">{err}</Text>
+      </Group>
+    );
+  };
+
   return (
     <BackgroundImage
       sx={{
@@ -133,11 +137,7 @@ export function AuthPage(props: PaperProps) {
               />
             )}
           </Stack>
-          {loginError && (
-            <Group mt={5}>
-              <Text color="red">{loginError}</Text>
-            </Group>
-          )}
+          {renderErrorMessage(error)}
 
           <Group position="apart" mt="xl">
             <Anchor

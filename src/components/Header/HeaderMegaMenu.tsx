@@ -166,7 +166,7 @@ export function HeaderMegaMenu() {
             spacing={0}
             className={classes.hiddenMobile}
           >
-            <a href="#" className={classes.link}>
+            <a href="#home" className={classes.link}>
               Home
             </a>
             <HoverCard
@@ -177,7 +177,7 @@ export function HeaderMegaMenu() {
               withinPortal
             >
               <HoverCard.Target>
-                <a href="#" className={classes.link}>
+                <a href="#features" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
                       Features
@@ -223,10 +223,10 @@ export function HeaderMegaMenu() {
                 </div>
               </HoverCard.Dropdown>
             </HoverCard>
-            <a href="#" className={classes.link}>
+            <a href="#test" className={classes.link}>
               Learn
             </a>
-            <a href="#" className={classes.link}>
+            <a href="#test2" className={classes.link}>
               Academy
             </a>
           </Group>

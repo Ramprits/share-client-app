@@ -156,11 +156,10 @@ export function HeaderMegaMenu() {
   ));
 
   return (
-    <Box pb={120}>
+    <Box className="mb-4">
       <Header height={60} px="md">
         <Group position="apart" sx={{ height: "100%" }}>
           <MantineLogo size={30} />
-
           <Group
             sx={{ height: "100%" }}
             spacing={0}
@@ -271,7 +270,7 @@ export function HeaderMegaMenu() {
             </Center>
           </UnstyledButton>
           <Collapse in={linksOpened}>{links}</Collapse>
-          <a href="#learn" className={classes.link} >
+          <a href="#learn" className={classes.link}>
             Learn
           </a>
           <a href="#academy" className={classes.link}>

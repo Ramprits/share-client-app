@@ -4,7 +4,7 @@ import routerProvider from "@pankod/refine-react-router-v6";
 import dataProvider from "@pankod/refine-simple-rest";
 import { notificationProvider, ReadyPage } from "@pankod/refine-mantine";
 
-import Home from "pages";
+import { Home } from "pages";
 import { axiosInstance } from "utils/axios.config";
 import { authProvider } from "utils/authProvider";
 import constants from "utils/constants";
@@ -19,6 +19,7 @@ function App(): JSX.Element {
       authProvider={authProvider}
       ReadyPage={ReadyPage}
       LoginPage={AuthPage}
+      DashboardPage={Home}
       dataProvider={dataProvider(constants.REST_API_URL, axiosInstance)}
       notificationProvider={notificationProvider}
       resources={[

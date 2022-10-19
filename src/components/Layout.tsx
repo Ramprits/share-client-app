@@ -7,7 +7,7 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <Fragment>
       <HeaderMegaMenu />
-      <Container size="md">{children}</Container>
+      <Container size="xl">{children}</Container>
     </Fragment>
   );
 };
